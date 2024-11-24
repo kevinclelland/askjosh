@@ -33,15 +33,31 @@ export default function AboutPage() {
         <div className="space-y-6">
           <h2 className="text-3xl font-bold tracking-tighter">The Beginning</h2>
           <p className="text-muted-foreground">
-            When Josh arrived at university as a first-year business student, he felt
-            overwhelmed by the endless possibilities and uncertainties ahead. Like many
-            students, he struggled to find his place and make the most of campus
-            resources and opportunities.
+            When Josh arrived at university as a first-year business student, he felt overwhelmed by the endless possibilities and uncertainties ahead. Like many students, he struggled to find his place and make the most of campus resources and opportunities.
           </p>
           <p className="text-muted-foreground">
-            Between juggling classes, trying to maintain a budget, and seeking the best
-            study spots, Josh realized there had to be a better way to navigate campus
-            life.
+            Between juggling classes, trying to maintain a budget, and seeking the best study spots, Josh realized there had to be a better way to navigate campus life. Every day, he encountered students asking the same questions:
+
+"Where’s the best place to get affordable coffee near campus?"
+"Which local businesses offer student discounts?"
+"Who can I trust to fix my laptop when it crashes two days before an assignment is due?"
+          </p>
+          <p className="text-muted-foreground">
+           Josh found himself becoming the go-to guy for recommendations. Whether it was the perfect quiet café, a reliable tutor, or a hidden gem that sold cheap, high-quality groceries, he had the answers. His friends started calling him “Google Josh,” and the nickname stuck.
+
+One late night in the library, as Josh helped yet another friend find a printer that worked, the idea struck him:
+Why not turn this into something bigger?
+
+Josh envisioned an app that could be every student’s personal insider guide to university life—a tool that could save time, money, and stress. He wanted to create a platform where students could easily access curated recommendations for businesses, services, and resources tailored to their needs.
+
+Partnering with a few tech-savvy friends, Josh began building the app. They named it “Ask Josh,” after his reputation as the guy who always knew the answers. The team worked tirelessly, reaching out to local businesses to list exclusive student deals and creating a database of verified recommendations.
+
+By the end of his second year, “Ask Josh” had launched. The app quickly became a hit among students, offering everything from the best late-night food options to budget-friendly gym memberships. Its user-friendly interface and localized focus set it apart from generic search engines.
+
+But “Ask Josh” was more than just an app. It became a community-driven platform where students could share their own tips, reviews, and experiences. Local businesses loved it too, as it gave them a direct line to their most important customers: students.
+          </p>
+          <p className="text-muted-foreground">
+           Now, “Ask Josh” isn’t just a business directory—it’s a lifeline for students navigating university life, turning a chaotic chapter into an adventure full of possibilities. And it all started with one overwhelmed first-year student who wanted to make things just a little easier for himself and his peers.
           </p>
         </div>
       </div>
