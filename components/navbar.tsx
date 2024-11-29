@@ -38,6 +38,34 @@ export function Navbar() {
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
+                <Link href="/newsletter" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    Newsletter
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/ai" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    AI
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/search" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    Search
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/trending" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    Trending
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
                 <Link href="/about" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     About
@@ -62,8 +90,26 @@ export function Navbar() {
               <SheetTitle>Menu</SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col gap-4 mt-4">
+            <Link href="/" className="text-lg font-medium">
+                Home
+              </Link>
               <Link href="/dashboard" className="text-lg font-medium">
                 Dashboard
+              </Link>
+              <Link href="/ai" className="text-lg font-medium">
+                ai
+              </Link>
+              <Link href="/newsletter" className="text-lg font-medium">
+                Newsletter
+              </Link>
+              <Link href="/search" className="text-lg font-medium">
+                Search
+              </Link>
+              <Link href="/trending" className="text-lg font-medium">
+                Trending
+              </Link>
+              <Link href="/profile" className="text-lg font-medium">
+                Profile
               </Link>
               <Link href="/about" className="text-lg font-medium">
                 About

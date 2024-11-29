@@ -6,8 +6,8 @@ export function HeroSection() {
   return (
     <div className="container flex flex-col items-center justify-center gap-4 pt-20 text-center">
       <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter">
-        Your Student Life,{" "}
-        <span className="gradient-text">Simplified</span>
+        Ask{" "}
+        <span className="gradient-text">Josh</span>
       </h1>
       <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
         Discover student-exclusive deals, find the best study spots, and get

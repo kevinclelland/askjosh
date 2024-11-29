@@ -7,7 +7,7 @@ import {
   Newspaper,
   TrendingUp,
   Search,
-  MessageSquare,
+  Bot,
   User
 } from "lucide-react";
 
@@ -30,7 +30,7 @@ const navItems = [
   {
     name: "AI",
     href: "/ai",
-    icon: MessageSquare
+    icon: Bot
   },
   {
     name: "Profile",
