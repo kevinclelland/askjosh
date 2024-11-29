@@ -137,6 +137,9 @@ export function Navbar() {
             <ThemeToggle />
           </div>
           <nav className="flex items-center space-x-2">
+          <Button asChild variant="ghost">
+              <Link href="/profile">Profile</Link>
+            </Button>
             <Button asChild variant="ghost">
               <Link href="/login">Login</Link>
             </Button>

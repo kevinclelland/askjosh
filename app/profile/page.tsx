@@ -4,13 +4,18 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { FavoritesSection } from "@/components/profile/favorites-section";
+import { ReviewsSection } from "@/components/profile/reviews-section";
 import {
   User,
   Settings,
   Bell,
   BookmarkCheck,
   LogOut,
-  Camera
+  Camera,
+  Heart,
+  MessageSquare
 } from "lucide-react";
 
 export default function ProfilePage() {
@@ -85,6 +90,27 @@ export default function ProfilePage() {
           </div>
         </div>
       </Card>
+
+      <Tabs defaultValue="favorites" className="space-y-6">
+        <TabsList>
+          <TabsTrigger value="favorites" className="flex items-center gap-2">
+            <Heart className="h-4 w-4" />
+            Favorites
+          </TabsTrigger>
+          <TabsTrigger value="reviews" className="flex items-center gap-2">
+            <MessageSquare className="h-4 w-4" />
+            My Reviews
+          </TabsTrigger>
+        </TabsList>
+        
+        <TabsContent value="favorites">
+          <FavoritesSection />
+        </TabsContent>
+        
+        <TabsContent value="reviews">
+          <ReviewsSection />
+        </TabsContent>
+      </Tabs>
 
       <div className="space-y-4">
         <h3 className="text-lg font-medium">Quick Actions</h3>
