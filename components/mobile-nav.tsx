@@ -14,6 +14,16 @@ import {
 
 const navItems = [
   {
+    name: "Search",
+    href: "/search",
+    icon: Search
+  },
+  {
+    name: "AI",
+    href: "/ai",
+    icon: Bot
+  },
+  {
     name: "Map",
     href: "/map",
     icon: MapIcon
@@ -27,16 +37,6 @@ const navItems = [
     name: "Trending",
     href: "/trending",
     icon: TrendingUp
-  },
-  {
-    name: "Search",
-    href: "/search",
-    icon: Search
-  },
-  {
-    name: "AI",
-    href: "/ai",
-    icon: Bot
   },
   {
     name: "Profile",

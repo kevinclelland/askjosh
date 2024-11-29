@@ -1,11 +1,14 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { MessageSquareText } from "lucide-react";
 
 export function HeroSection() {
   return (
     <div className="container flex flex-col items-center justify-center gap-4 pt-20 text-center">
+      
       <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter">
+      
         Ask{" "}
         <span className="gradient-text">Josh</span>
       </h1>
