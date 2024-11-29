@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { MessageSquareText } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -18,7 +17,7 @@ export function HeroSection() {
       </p>
       <div className="flex gap-4">
         <Button asChild size="lg">
-          <Link href="/register">
+          <Link href="/search">
             Get Started
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
