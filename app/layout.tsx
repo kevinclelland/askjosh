@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
+import { MobileNav } from "@/components/mobile-nav";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,6 +28,7 @@ export default function RootLayout({
         >
           <Navbar />
           <main className="min-h-screen">{children}</main>
+          <MobileNav />
         </ThemeProvider>
       </body>
     </html>

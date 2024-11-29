@@ -25,6 +25,7 @@
     --ring: 248 90% 66%;
     --radius: 0.5rem;
   }
+
  
   .dark {
     --background: 222.2 84% 4.9%;
@@ -39,8 +40,8 @@
     --secondary-foreground: 210 40% 98%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 336 80% 58%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 248 90% 66%;
+    --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
     --border: 217.2 32.6% 17.5%;
