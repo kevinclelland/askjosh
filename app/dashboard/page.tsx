@@ -44,7 +44,7 @@ export default function DashboardPage() {
         </div>
 
         <div className="lg:sticky lg:top-20">
-          <ChatInterface />
+         <ChatInterface />
         </div>
       </div>
     </div>

@@ -34,16 +34,9 @@ export function Navbar() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link href="/dashboard" legacyBehavior passHref>
+                <Link href="/search" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Dashboard
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/newsletter" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Newsletter
+                    Search
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -62,19 +55,20 @@ export function Navbar() {
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/search" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Search
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
                 <Link href="/trending" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Trending
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/newsletter" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    Newsletter
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              
               <NavigationMenuItem>
                 <Link href="/about" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -108,8 +102,8 @@ export function Navbar() {
             <Link href="/" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                 Home
               </Link>
-              <Link href="/dashboard" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
-                Dashboard
+              <Link href="/search" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
+                Search
               </Link>
               <Link href="/ai" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                 ai
@@ -120,9 +114,6 @@ export function Navbar() {
               <Link href="/newsletter" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                 Newsletter
               </Link>
-              <Link href="/search" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
-                Search
-              </Link>
               <Link href="/trending" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                 Trending
               </Link>
@@ -131,6 +122,9 @@ export function Navbar() {
               </Link>
               <Link href="/about" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                 About
+              </Link>
+              <Link href="/dashboard" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
+                Dashboard
               </Link>
             </nav>
           </SheetContent>
