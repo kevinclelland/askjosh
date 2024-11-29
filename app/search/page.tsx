@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { FeaturedPostsCarousel } from "@/components/featured-posts-carousel";
 import { businesses, categories } from "@/lib/data";
 
 export default function SearchPage() {
@@ -32,6 +33,11 @@ export default function SearchPage() {
         <p className="text-muted-foreground">
           Find exactly what you&apos;re looking for
         </p>
+      </div>
+
+      <div className="space-y-4">
+      <h2 className="text-xl font-semibold">Featured Posts</h2>
+      <FeaturedPostsCarousel />
       </div>
 
       <div className="flex gap-2">
