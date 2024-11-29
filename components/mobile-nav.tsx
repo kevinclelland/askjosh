@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import {
   Newspaper,
+  Map as MapIcon,
   TrendingUp,
   Search,
   Bot,
@@ -12,6 +13,11 @@ import {
 } from "lucide-react";
 
 const navItems = [
+  {
+    name: "Map",
+    href: "/map",
+    icon: MapIcon
+  },
   {
     name: "Newsletter",
     href: "/newsletter",

@@ -52,6 +52,13 @@ export function Navbar() {
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
+                <Link href="/map" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    Map
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
                 <Link href="/search" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Search
@@ -98,6 +105,9 @@ export function Navbar() {
               </Link>
               <Link href="/ai" className="text-lg font-medium">
                 ai
+              </Link>
+              <Link href="/map" className="text-lg font-medium">
+                Map
               </Link>
               <Link href="/newsletter" className="text-lg font-medium">
                 Newsletter
