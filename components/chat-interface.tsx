@@ -13,7 +13,9 @@ interface Message {
 }
 
 export function ChatInterface() {
-  const [messages, setMessages] = useState<Message[]>([{ role: "assistant", content: "What are you looking for?" }]);
+  const [messages, setMessages] = useState<Message[]>([
+    { role: "assistant", content: "Hi! 👋 I'm Josh, your campus companion. What can I help you find today?" }
+  ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
@@ -58,7 +60,7 @@ export function ChatInterface() {
           
           if (lastMessage.role === "assistant") {
             const content = lastMessage.content[0].type === "text" 
-              ? lastMessage.content[0].text.value 
+              ? formatMessage(lastMessage.content[0].text.value)
               : "I couldn't process that response.";
               
             setMessages((prev) => [...prev, { role: "assistant", content }]);
@@ -86,6 +88,22 @@ export function ChatInterface() {
     }
   };
 
+  const formatMessage = (text: string): string => {
+    // Add line breaks for readability
+    const withLineBreaks = text.replace(/\. (?=[A-Z])/g, '.\n\n');
+    
+    // Format lists
+    const withLists = withLineBreaks.replace(/^[0-9]+\. /gm, '\n$&');
+    
+    // Add emphasis to key points
+    const withEmphasis = withLists.replace(
+      /(Important:|Note:|Tips?:|Recommendation:)/g,
+      '\n\n**$1**'
+    );
+    
+    return withEmphasis.trim();
+  };
+
   return (
     <div className="flex h-[600px] flex-col rounded-lg border bg-background">
       <div className="flex items-center gap-2 border-b px-4 py-2">
@@ -105,7 +123,7 @@ export function ChatInterface() {
               <div
                 className={`rounded-lg px-4 py-2 max-w-[80%] ${
                   message.role === "assistant"
-                    ? "bg-muted"
+                    ? "bg-muted whitespace-pre-line"
                     : "bg-primary text-primary-foreground"
                 }`}
               >
