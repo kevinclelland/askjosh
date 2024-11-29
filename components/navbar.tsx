@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { MessageSquareText, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -20,6 +21,8 @@ import {
 } from "@/components/ui/sheet";
 
 export function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
@@ -82,7 +85,7 @@ export function Navbar() {
             </NavigationMenuList>
           </NavigationMenu>
         </div>
-        <Sheet>
+        <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
             <Button
               variant="ghost"
@@ -94,39 +97,47 @@ export function Navbar() {
           </SheetTrigger>
           <SheetContent side="left">
             <SheetHeader>
-              <SheetTitle>Menu</SheetTitle>
+              <SheetTitle>
+                
+              
+              <span className="flex font-bold"><MessageSquareText className="h-6 w-6" />Ask Josh</span>
+
+              </SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col gap-4 mt-4">
-            <Link href="/" className="text-lg font-medium">
+            <Link href="/" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                 Home
               </Link>
-              <Link href="/dashboard" className="text-lg font-medium">
+              <Link href="/dashboard" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                 Dashboard
               </Link>
-              <Link href="/ai" className="text-lg font-medium">
+              <Link href="/ai" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                 ai
               </Link>
-              <Link href="/map" className="text-lg font-medium">
+              <Link href="/map" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                 Map
               </Link>
-              <Link href="/newsletter" className="text-lg font-medium">
+              <Link href="/newsletter" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                 Newsletter
               </Link>
-              <Link href="/search" className="text-lg font-medium">
+              <Link href="/search" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                 Search
               </Link>
-              <Link href="/trending" className="text-lg font-medium">
+              <Link href="/trending" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                 Trending
               </Link>
-              <Link href="/profile" className="text-lg font-medium">
+              <Link href="/profile" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                 Profile
               </Link>
-              <Link href="/about" className="text-lg font-medium">
+              <Link href="/about" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
                 About
               </Link>
             </nav>
           </SheetContent>
         </Sheet>
+
+      
+
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <div className="w-full flex-1 md:w-auto md:flex-none">
             <ThemeToggle />
